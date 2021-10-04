@@ -1,0 +1,66 @@
+@font-face {
+  font-family: cm;
+  src: url("fonts/Cormorant-Medium.ttf");
+}
+
+@font-face {
+  font-family: ci;
+  src: url("fonts/Cormorant-Italic.ttf");
+}
+
+@font-face {
+  font-family: rt;
+  src: url("fonts/Roboto-Thin.ttf");
+}
+
+@font-face {
+  font-family: pdr;
+  src: url("fonts/PlayfairDisplay-Regular.ttf");
+}
+
+
+body {
+  margin: 0;
+}
+
+a {
+  color: rgba(0,0,0,1);
+  text-decoration: none;
+}
+
+.main-outer {
+  background-color: rgba(0,0,0,.5);
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns: 100vw;
+}
+
+.main-inner {
+  display: grid;
+  grid-gap: 1px 1px;
+  grid-template-rows: 100vh;
+  grid-template-columns: 100vw;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+
+.page-outer {
+  background-color: white; 
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns: 100vw;
+  scroll-snap-align: start;
+}
+
+.page-inner {
+  align-self: center;
+  display: grid;
+  justify-self: center;
+}
+
+.page-content {
+  font-family: pdr;
+  font-size: 36px;
+  text-align: center;
+}
